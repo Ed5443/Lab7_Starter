@@ -14,7 +14,7 @@ self.addEventListener('install', function (event) {
     .then(function(cache){
       console.log('Opened Cache');
       return cache.addAll(['favicon.ico','assets/scripts/main.js','assets/styles/main.css', 
-      'assets/scripts/Router.js', 'index.html', 'assets/images/icons/0-star.svg',
+      'assets/scripts/Router.js', 'index.html',
       'assets/images/icons/arrow-down.png',
       'assets/components/RecipeCard.js', 'assets/components/RecipeExpand.js','https://introweb.tech/assets/json/ghostCookies.json',
       'https://introweb.tech/assets/json/birthdayCake.json',
