@@ -24,9 +24,9 @@ self.addEventListener('install', function (event) {
     caches.open(CACHE_NAME)
     .then(function(cache){
       console.log('Opened Cache');
-      return cache.addAll(['Lab7_Starter/','Lab7_Starter/assets/scripts/main.js','Lab7_Starter/assets/styles/main.css', 
-      'Lab7_Starter/assets/scripts/router.js', 'Lab7_Starter/index.html',
-      'Lab7_Starter/assets/components/RecipeCard.js', 'Lab7_Starter/assets/components/RecipeExpand.js','https://introweb.tech/assets/json/ghostCookies.json',
+      return cache.addAll(['/','assets/scripts/main.js','assets/styles/main.css', 
+      'assets/scripts/router.js', 'index.html',
+      'assets/components/RecipeCard.js', 'assets/components/RecipeExpand.js','https://introweb.tech/assets/json/ghostCookies.json',
       'https://introweb.tech/assets/json/birthdayCake.json',
       'https://introweb.tech/assets/json/chocolateChip.json',
       'https://introweb.tech/assets/json/stuffing.json',
