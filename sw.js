@@ -3,17 +3,6 @@
 
 const CACHE_NAME = 'lab-7-starter';
 
-urlsToCache = ['ed5443.github.io/Lab7_Starter/assets/images/icons/','ed5443.github.io/Lab7_Starter/assets/scripts/main.js',
-'ed5443.github.io/Lab7_Starter/assets/styles/main.css', 
-'ed5443.github.io/Lab7_Starter/assets/scripts/router.js', 'ed5443.github.io/Lab7_Starter/index.html',
-'ed5443.github.io/Lab7_Starter/assets/components/RecipeCard.js', 'ed5443.github.io/Lab7_Starter/assets/components/RecipeExpand.js',
-'https://introweb.tech/assets/json/ghostCookies.json',
-'https://introweb.tech/assets/json/birthdayCake.json',
-'https://introweb.tech/assets/json/chocolateChip.json',
-'https://introweb.tech/assets/json/stuffing.json',
-'https://introweb.tech/assets/json/turkey.json',
-'https://introweb.tech/assets/json/pumpkinPie.json']
-
 // Once the service worker has been installed, feed it some initial URLs to cache
 self.addEventListener('install', function (event) {
   /**
@@ -24,7 +13,7 @@ self.addEventListener('install', function (event) {
     caches.open(CACHE_NAME)
     .then(function(cache){
       console.log('Opened Cache');
-      return cache.addAll(['/','assets/scripts/main.js','assets/styles/main.css', 
+      return cache.addAll(['Lab7_Starter/','assets/scripts/main.js','assets/styles/main.css', 
       'assets/scripts/router.js', 'index.html',
       'assets/components/RecipeCard.js', 'assets/components/RecipeExpand.js','https://introweb.tech/assets/json/ghostCookies.json',
       'https://introweb.tech/assets/json/birthdayCake.json',
